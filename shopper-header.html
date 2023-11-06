@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopper-template</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            font-size: 15px;
+            font-weight: lighter;
+            font-family: arial;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 10px;
+        }
+        .brand-title {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .cart-count {
+            background-color: red;
+            color: white;
+            padding: 3px;
+            width: 10px;
+            display: inline-block;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 10px;
+        }
+        article {
+            background-color: black;
+            color: white;
+            padding: 7px;
+            text-align: center;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        .bi-lightning-fill {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+             <span class="brand-title">shopper.</span>
+        </div>
+        <div>
+            <nav>
+                <span>HOME</span>
+                <span>CATLOG</span>
+                <span>SHOP</span>
+                <span>PAGES</span>
+                <span>BLOG</span>
+                <span>DOCS</span>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart3"><span class="cart-count"><sup>2</sup></span></span>
+            </nav>
+        </div>
+    </header>
+    <article>
+         <span class="bi bi-lightning-fill"></span>
+         <span>HAPPY HOLIDAY DEALS ON EVERYDAY</span>
+         <span class="bi bi-lightning-fill"></span>
+    </article>        
+</body>
+</html>

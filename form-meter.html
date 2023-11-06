@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        ul {
+            list-style: none;
+        }
+        ul span {
+            margin-left: 10px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        meter {
+            width: 150px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+             <legend>Ratings & Reviews</legend>
+             <ul>
+                <li>
+                    <span>5</span><span class="bi bi-star-fill"></span>
+                    <meter min="1" value="5" max="5"></meter>
+                    <span>8,123</span>
+                </li>
+                <li>
+                    <span>4</span><span class="bi bi-star-fill"></span>
+                    <meter min="1" max="5" value="3"></meter>
+                    <span>5,923</span>
+                </li>
+                <li>
+                    <span>3</span><span class="bi bi-star-fill"></span>
+                    <meter min="1" max="5" value="2"></meter>
+                    <span>3,123</span>
+                </li>
+                <li>
+                    <span>2</span><span class="bi bi-star-fill"></span>
+                    <meter min="1" max="100" low="40" high="80" value="100"></meter>
+                    <span>123</span>
+                </li>
+                <li>
+                    <span>1</span><span class="bi bi-star-fill"></span>
+                    <meter min="1" max="100" low="60" high="80" value="100"></meter>
+                    <span>23</span>
+                </li>
+             </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

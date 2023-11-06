@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table align & valign</title>
+    <style>
+        table {
+            font-family: Arial;
+        }
+        table img {
+            width: 30px;
+        }
+        .w {
+            background-color: green;
+            color:white;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        .l {
+            background-color: red;
+            color:white;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        .a {
+            background-color: gray;
+            color:white;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        table span {
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+        }
+        caption {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%"  border="1" frame="void" cellspacing="5" cellpadding="5" >
+        <caption>Asia Cup Point Table 2023 - Group A</caption>
+        <colgroup span="10"></colgroup>
+        <thead >
+            <tr height="50" valign="center">
+                <th>Pos</th>
+                <th colspan="2">Teams</th>
+                <th>Matches</th>
+                <th>Won</th>
+                <th>Lost</th>
+                <th>Tied</th>
+                <th>NR</th>
+                <th>Points</th>
+                <th>NRR</th>
+                <th colspan="2">Series Form</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>1</td>
+                <td><img src="public/images/pak.jpg"></td>
+                <td align="left" width="150">Pakistan</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>3</td>
+                <td>+4.760</td>
+                <td><span class="w">W</span></td>
+                <td><span class="a">A</span></td>
+            </tr>
+            <tr align="center">
+                <td>2</td>
+                <td><img src="public/images/india.jpg"></td>
+                <td align="left">India</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>3</td>
+                <td>+1.028</td>
+                <td><span class="a">A</span></td>
+                <td><span class="w">W</span></td>
+            </tr>
+            <tr align="center">
+                <td>3</td>
+                <td><img src="public/images/nepal.jpg"></td>
+                <td align="left">Nepal</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>-3.572</td>
+                <td><span class="l">L</span></td>
+                <td><span class="l">L</span></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="12">
+                    Pos: Position, Pld: Played, Pts: Points, NRR: Net Run Rate
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

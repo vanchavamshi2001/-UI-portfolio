@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset & Legend</title>
+    <style>
+        dl {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        dt {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        dd {
+            background-color: gray;
+            color: white;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            box-shadow: 10px 10px 2px black;
+            width: 500px;
+            border-radius: 20px;
+            background-image: url(public/images/kids.jpg);
+            background-size: cover;
+        }
+        legend {
+            text-align: center;
+            background-color: darkorchid;
+            color: white;
+            font-weight: bold;
+            padding: 4px;
+            width: 150px;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Personal details</legend>
+        <dl>
+            <dt>NAME</dt>
+            <dd>Vamshi</dd>
+            <dt>GENDER</dt>
+            <dd>male</dd>
+            <dt>AGE</dt>
+            <dd>21</dd>
+        </dl>
+    </fieldset>
+    <fieldset>
+        <legend>Contact details</legend>
+        <dl>
+            <dt>STATE</dt>
+            <dd>Telangana</dd>
+            <dt>CITY</dt>
+            <dd>Hydrabad</dd>
+            <dt>Postal Code</dt>
+            <dd>500018</dd>
+        </dl>
+    </fieldset>
+</body>
+</html>

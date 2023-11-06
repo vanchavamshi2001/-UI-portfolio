@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            font-size: 25px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .search-bar {
+            color: gray;
+            font-size: 20px;
+            border: 1px solid gray;
+            width: 500px;
+            border-radius: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .search-area {
+            display: flex;
+        }
+        .profile-pic {
+            border: 1px solid black;
+            border-radius: 30px;
+        }
+        .shortcut-buttons span {
+            margin-right: 20px;
+        }
+        .bi-mic-fill {
+            margin-left: 20px;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 1fr 11fr;
+            margin-top: 20px;
+        }
+        .nav-item {
+            font-size: 25px;
+            margin-bottom: 40px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .nav-item span {
+            font-size: 15px;
+        }
+        article {
+            display: grid;
+            grid-template-columns: 10fr 2fr;
+            margin-top: 20px;
+            font-family: arial;
+        }
+        .title {
+            font-size: 25px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        .sub-title {
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        .subscribe {
+            background-color: lightgrey;
+            color: black;
+            padding: 5px;
+            width: 120px;
+            border-radius: 10px;
+        }
+        .text {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .categories {
+            font-size: 17px;
+            font-family: arial;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            color: gray;
+            text-transform: uppercase;
+        }
+        .videos {
+            font-size: 20px;
+            font-family: arial;
+            padding: 20px;
+        }
+        .thumbnails {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+        }
+        iframe {
+            width: 220px;
+            height: 130px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="bi bi-justify"></span>
+            <img src="public/images/youtube-logo.jpg" width="100">
+        </div>
+        <div class="search-area">
+            <div class="search-bar">
+                <span>Search</span>
+                <span class="bi bi-search"></span>
+            </div>
+            <span class="bi bi-mic-fill"></span>
+        </div>
+        <div class="shortcut-buttons">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell-fill"></span>
+            <img class="profile-pic" src="public/images/men-fashion.jpg" height="30" width="30">
+        </div>
+    </header>
+    <section>
+        <nav>
+            <div class="nav-item">
+                <div class="bi bi-house-door"></div>
+                <span>Home</span>
+            </div>
+            <div class="nav-item">
+                <div class="bi bi-film"></div>
+                <span>Shorts</span>
+            </div>
+            <div class="nav-item">
+                <div class="bi bi-collection-play"></div>
+                <span>Subcriptions</span>
+            </div>
+            <div class="nav-item">
+                <div class="bi bi-camera-video"></div>
+                <span>Library</span>
+            </div>
+        </nav>
+        <main>
+            <div>
+                <img src="public/images/channel-banner.jpg" width="100%">
+            </div>
+            <article>
+                <div>
+                    <img src="public/images/nareshit-logo.jpg" align="left" width="140">
+                    <div class="title">Naresh i Technologies</div>
+                    <div class="sub-title">@NareshIT1.2M subscribers2.8K videos</div>
+                    <div class="text">We are one of the India's largest software training organization and an Top 5 ..</div>
+                    <div><a href="instagram.com/nareshitech">instagram.com/nareshitech</a> and 7 more links</div>
+                </div>
+                <div>
+                    <div class="subscribe">
+                        <span class="bi bi-bell"> Subscribe</span>
+                        <span class="bi bi-chevron-down"></span>
+                    </div>
+                </div>
+            </article>
+            <div class="categories">
+                <span>HOME</span>
+                <span>VIDEOS</span>
+                <span>SHORTS</span>
+                <span>LIVE</span>
+                <span>PLAYLISTS</span>
+                <span>COMMUNITY</span>
+                <span>CHANNELS</span>
+                <span>About</span>
+            </div>
+            <div class="videos">
+                <span>Videos</span>
+                <span class="bi bi-play-fill"></span>
+                <span>Play all</span>
+            </div>
+            <div class="thumbnails">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/szeag0Fdatg"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/Ft-v5aLDWqc"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/DeEszXEewHs"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/f5doC5v3Xd8"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/X7RNpVTemHo"></iframe>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
