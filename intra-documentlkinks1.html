@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intra document links</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            background-color: blueviolet;
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+            margin-top: 5px;
+        }
+        main {
+            height: 500px;
+            overflow: auto;
+        }
+        ul {
+            list-style: none;
+            margin-left: -40px;
+        }
+        li {
+            background-color: blueviolet;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 20px;
+            width: 170px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+        nav a:visited {
+            color: white;
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="bio bi-cart4"> FASHION STORE</span>
+        <div>
+            <a href="#women"><img src="public/images/women-fashion.jpg"></a>
+            <a href="#men"><img src="public/images/men-fashion.jpg"></a>
+            <a href="#kid"><img src="public/images/kid-fashion.jpeg"></a>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#women">Women's fashion</a></li>
+                <li><a href="#men">Men's fashion</a></li>
+                <li><a href="#kid">Kid's fashion</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2 id="home">Home</h2>
+            <p>fashion is the most general term and applies to any way of dressing, behaving, writing, or performing that is favored at any one time or place. the current fashion. style often implies a distinctive fashion adopted by people of taste</p>
+
+            <h2 id="women">Women's fashion</h2>
+            <img src="public/images/women-fashion.jpg" width="200px" height="300px">
+            <div>
+                <a href="#home">Back to top</a>
+            </div>
+            <p>fashion is the most general term and applies to any way of dressing, behaving, writing, or performing that is favored at any one time or place. the current fashion. style often implies a distinctive fashion adopted by people of taste</p>
+
+            <h2 id="men">Men's fashion</h2>
+            <img src="public/images/men-fashion.jpg" width="200px" height="300px">
+            <div>
+                <a href="#home">Back to top</a>
+            </div>
+            <p>fashion is the most general term and applies to any way of dressing, behaving, writing, or performing that is favored at any one time or place. the current fashion. style often implies a distinctive fashion adopted by people of taste</p>
+
+            <h2 id="kid">Kid's fashion</h2>
+            <img src="public/images/kid-fashion.jpeg" width="150px" height="250px">
+            <div>
+                <a href="#home">Back to top</a>
+            </div>
+            <p>fashion is the most general term and applies to any way of dressing, behaving, writing, or performing that is favored at any one time or place. the current fashion. style often implies a distinctive fashion adopted by people of taste</p>
+        </main>
+    </section>
+</body>
+</html>

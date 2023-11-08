@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link rel="style" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        ul {
+         list-style: none;
+         display: flex;
+         font-family: Arial;
+        }
+        li {
+         margin-right: 10px;
+         width: 25px;
+         padding: 5px;
+         border:1px solid black;
+         text-align: center;
+         background-color: lightcyan;
+         border-radius: 5px;
+       }
+       li:hover {
+          background-color: black;
+          color:white;
+          cursor: grab;
+       }
+       .disabled {
+          background-color: gray;
+          color:white;
+          border:none;
+       }
+       .disabled:hover {
+        cursor: not-allowed;
+        background-color: white;
+        color:black;
+       }
+       body {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        height: 500px;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <span>&laquo;</span> </li>
+            <li> <span>1</span> </li>
+            <li> <span>2</span> </li>
+            <li> <span>3</span> </li>
+            <li class="disabled"> <span>4</span> </li>
+            <li> <span>5</span> </li>
+            <li> <span>...</span> </li>
+            <li> <span>&raquo;</span> </li>
+        </ul>
+</body>
+</html>
